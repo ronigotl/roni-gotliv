@@ -173,16 +173,12 @@ h1{
     grid-area: nav; 
   } 
 
-  .active a{
-    background-color: rgb(238, 9, 9);
-    ;
+   .active{
+    background-color:burlywood;
+     border-radius: 5px;
   }
+  
   li {
     display: inline;
-  }
+  } 
 
-
-  .topnav a.active {
-    background-color: #00fa9e;
-    color: white;
-  }
