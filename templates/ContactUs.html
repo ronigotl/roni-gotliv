@@ -5,66 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="file:///C:\Users\רוני גוטליב\Desktop\web project\roni-gotliv\static/CSS.Css">
+    <script type="text/javascript" src="file:///C:\Users\רוני גוטליב\Desktop\web project\roni-gotliv\static\JS.JS"> </script>
+</head> 
 
-      <style>
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=email], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-body{
-  background-color: rgb(84, 179, 174) ;
-
-}
-</style>
-
-  
-    
-</head>
 <body>
-    <body>
-    <nav>
-        <a href="file:///C:/Users/%D7%A8%D7%95%D7%A0%D7%99%20%D7%92%D7%95%D7%98%D7%9C%D7%99%D7%91/Desktop/web%20project/roni-gotliv/templates/Homepage.html">Homepage</a> |
-        <a href="https://www.google.co.il/?hl=iw">search</a> |
-        <a href="https://www.google.com/maps/@32.226743,34.747009,9z?hl=iw">map</a> 
-      </nav><br>
+ <div>
+  <ul>
+      <nav>
+        <div class="topnav">
+            <li><a href="file:///C:/Users/%D7%A8%D7%95%D7%A0%D7%99%20%D7%92%D7%95%D7%98%D7%9C%D7%99%D7%91/Desktop/web%20project/roni-gotliv/templates/Homepage.html">Homepage</a> |</li>
+            <li><a href="file:///C:/Users/%D7%A8%D7%95%D7%A0%D7%99%20%D7%92%D7%95%D7%98%D7%9C%D7%99%D7%91/Desktop/web%20project/roni-gotliv/templates/ContactUs.html">ContactUs</a> |</li>
+            <li><a href="https://www.google.co.il/?hl=iw">search</a>|</li>
+            <li><a href="https://www.google.com/maps/@32.226743,34.747009,9z?hl=iw">map</a></li>
+         </div>
+    </nav>
+</ul>
 
-      <div>
+      
+  
+
+
+     <div class="menu">  
+
+      <h1>If you need a recommendation</h1>
+
+      <button onclick="typeWriter1()">Click me</button>
+      
+      <p id="demo"></p>
+
+
     <p>Where you would like to travel:</p>
 <form>
   <input type="radio" id="Europe" name="Continents" value="Europe">
@@ -74,7 +45,7 @@ body{
   <input type="radio" id="Africa" name="Continents" value="Africa">
   <label for="Africa">Africa</label>
 
-  <form>
+  
       <p>How do you like to travel?</p>
     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
     <label for="vehicle1"> bike</label><br>
@@ -82,8 +53,10 @@ body{
     <label for="vehicle2"> car</label><br>
     <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
     <label for="vehicle3"> boat</label><br><br>
-  </form>
+  
 </form>
+ 
+
 
 <label for="car-make">Choose a trip type:</label>
 
@@ -99,9 +72,11 @@ body{
     <option value="other">
 </datalist>
 
-<h3>Leave details and we will get back to you</h3>
 
-<div>
+<h3 id="arrow">Leave details and we will get back to you</h3>
+
+
+
   <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
@@ -109,13 +84,15 @@ body{
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
 
-    <label for="lname">email</label>
+    <label for="email">email</label>
     <input type="email" id="email" name="email" placeholder="Your email.."><br><br>
-  
-    <input type="submit" value="Submit">
-  </form>
-</div>
 
+     <input type="submit" value="Submit">
+
+  </form>
+
+</div>
+</div>
 
 
 </body>
